@@ -53,6 +53,11 @@
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
+            L.tileLayer('https://{s}.tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png', {
+	maxZoom: 18,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+
+		}).addTo(map)
         function pop_TownBoundaryIndexMapOGRGeoJSON_0(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
